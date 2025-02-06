@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="image-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://imgs.search.brave.com/mmqE6OTN4bKpoLFXRGFhy4noFMyFU5F3MUahR4prLB0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L25ld3MvNDgwL2Nw/c3Byb2RwYi8zMmYx/L2xpdmUvNmNhNjVk/NjAtOWNjNC0xMWVm/LTlmMWMtMzNiMmU0/NzlhODZmLmpwZy53/ZWJw" alt="Image 1">
+                <div class="caption">
+                    <h2>MT FUJI</h2>
+                    <p>Mount Fuji is an active stratovolcano located on the Japanese island of Honshu, with a summit elevation of 3,776.24 m (12,389 ft 3 in).</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/wwFlbK7uh6BdeNqS2CPBmQNCKs78uI5C6F2L8ge5UCM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE2/MzY1OTc3NS9waG90/by9tb3VudC1mdWpp/LWphcGFuLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1icVVF/WVpJbFdDUFpwWTlF/cXZqTG4tZzNqSFFI/eFBGSEhHR3o5eFNS/RUJzPQ" alt="Image 2">
+                <div class="caption">
+                    <h2>MT FUJI</h2>
+                    <p> It was added to the World Heritage List as a Cultural Site on June 22, 2013.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/2Y2RiHne8gFC7q2gRUaILdLoSVzQyCpFg9ct5IcNcqk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA4/MTc4NDU4L3Bob3Rv/L2FlcmlhbC1waG90/by1vZi1tb3VudC1m/dWppLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0tdDg1d1Vt/TVM3Tjc2WkthbW45/UzBrdGU3LS1xZnFi/Z0dIRWZjbEUwbnVn/PQ" alt="Image 3">
+                <div class="caption">
+                    <h2>MT FUJI</h2>
+                    <p>Mount Fuji is an attractive volcanic cone and has been a frequent subject of Japanese art.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="thumbnail-navigation">
+            <div class="thumbnail-container">
+                <img src="https://imgs.search.brave.com/mmqE6OTN4bKpoLFXRGFhy4noFMyFU5F3MUahR4prLB0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L25ld3MvNDgwL2Nw/c3Byb2RwYi8zMmYx/L2xpdmUvNmNhNjVk/NjAtOWNjNC0xMWVm/LTlmMWMtMzNiMmU0/NzlhODZmLmpwZy53/ZWJw" alt="Thumbnail 1" data-slide="0" class="thumbnail active-thumbnail">
+                <img src="https://imgs.search.brave.com/wwFlbK7uh6BdeNqS2CPBmQNCKs78uI5C6F2L8ge5UCM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE2/MzY1OTc3NS9waG90/by9tb3VudC1mdWpp/LWphcGFuLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1icVVF/WVpJbFdDUFpwWTlF/cXZqTG4tZzNqSFFI/eFBGSEhHR3o5eFNS/RUJzPQ" alt="Thumbnail 2" data-slide="1" class="thumbnail">
+                <img src="https://imgs.search.brave.com/2Y2RiHne8gFC7q2gRUaILdLoSVzQyCpFg9ct5IcNcqk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA4/MTc4NDU4L3Bob3Rv/L2FlcmlhbC1waG90/by1vZi1tb3VudC1m/dWppLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0tdDg1d1Vt/TVM3Tjc2WkthbW45/UzBrdGU3LS1xZnFi/Z0dIRWZjbEUwbnVn/PQ" alt="Thumbnail 3" data-slide="2" class="thumbnail">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
